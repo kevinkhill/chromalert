@@ -7,23 +7,22 @@ jQuery plugin for creating notifications in Google Chrome
 Usage
 =====
 
-include the script in the
+include the script after loading jQuery
 
 ```
     <head>
     ...
-    <script src="/js/jquery.chromalert.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="jquery.chromalert.min.js"></script>
     ...
     </head>
-
 ```
 
-The call as such:
+Then call chromalert as such
 
 ```
     var cAlert = $.chromalert();
     cAlert.show();
-
 ```
 
 The default options can be overridden by passing an object to the chromalert function
@@ -35,5 +34,4 @@ The default options can be overridden by passing an object to the chromalert fun
     link    : null,                                                  // Link to browse to upon clicking the notification
     timeout : 3000                                                   // Milliseconds to show notification
 }
-
 ```
